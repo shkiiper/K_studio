@@ -1,3 +1,9 @@
+.container-fluid {
+  position: relative;
+  word-wrap: break-word;
+  width: 100%;
+  padding: 0;
+}
 .grecaptcha-badge {
   visibility: collapse !important;
 }
