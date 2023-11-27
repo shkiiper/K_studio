@@ -29161,6 +29161,7 @@ li {
 
   .sticky-card-fixed-height-500px.image-card {
     height: 240px;
+    display: none;
     margin-top: 0;
   }
 
