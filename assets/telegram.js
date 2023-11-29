@@ -20,12 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 `
       }).then((res)=>{
         if(res.status === 200){
-          document.querySelector('#phone-6').value = 'Вы успешно оставили заявку' 
-          setTimeout(()=>{
-            document.querySelector('#phone-6').value = ''
-            document.querySelector('.pop-up-form-netpeak-site').classList.add('d-none')
-            document.querySelector('body').style.overflow = 'auto'
-          }, 100)
+          // document.querySelector('.pop-up-form-netpeak-site').reset();
+          document.querySelector('.pop-up-form-netpeak-site').classList.add('d-none')
+          document.querySelector('body').style.overflow = 'auto'
+      
         }
       })
     } else {
