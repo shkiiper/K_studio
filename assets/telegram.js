@@ -20,10 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 `
       }).then((res)=>{
         if(res.status === 200){
-          // document.querySelector('.pop-up-form-netpeak-site').reset();
+          setTimeout(() => {
+          document.querySelector('.pop-up-form-netpeak-site').reset();
+          document.querySelector('.pop-up-content-main-form').classList.add('d-none')
           document.querySelector('.pop-up-form-netpeak-site').classList.add('d-none')
+        
           document.querySelector('body').style.overflow = 'auto'
-      
+          console.log('Окно скрыто.');
+          },200)
         }
       })
     } else {

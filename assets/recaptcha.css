@@ -19,5 +19,5 @@
   align-items: start;
 }
 .d-none {
-  display: none;
+  display: none !important;
 }
