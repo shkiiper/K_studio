@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           document.querySelector('body').style.overflow = 'auto'
           console.log('Окно скрыто.');
 
-          window.location.reload();
+          window.location.href = window.location.href.split('#')[0];
           },200)
         }
       })
