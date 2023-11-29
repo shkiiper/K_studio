@@ -24,9 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
           document.querySelector('.pop-up-form-netpeak-site').reset();
           document.querySelector('.pop-up-content-main-form').classList.add('d-none')
           document.querySelector('.pop-up-form-netpeak-site').classList.add('d-none')
-        
           document.querySelector('body').style.overflow = 'auto'
           console.log('Окно скрыто.');
+
+          let blockedElements = document.querySelectorAll('.blocked-element');
+          blockedElements.forEach(element => {
+            element.classList.remove('d-none');
+          });
           },200)
         }
       })
