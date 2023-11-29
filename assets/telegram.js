@@ -27,10 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           document.querySelector('body').style.overflow = 'auto'
           console.log('Окно скрыто.');
 
-          let blockedElements = document.querySelectorAll('.blocked-element');
-          blockedElements.forEach(element => {
-            element.classList.remove('d-none');
-          });
+          window.location.reload();
           },200)
         }
       })
